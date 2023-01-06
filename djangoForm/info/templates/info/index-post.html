@@ -7,7 +7,8 @@
     <title>Post Info</title>
   </head>
   <body>
-    <form action="" method="post"></form>
+    <form action="{% url 'info:printpost' %}" method="post"></form>
+    {% csrf_token %}
     <label for="email">Enter your email:</label>
     <input type="text" name="email" id="email" />
     <input type="submit" />

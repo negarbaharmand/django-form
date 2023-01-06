@@ -8,3 +8,9 @@ def get(request):
 
 def post(request):
  return render(request, "info/index-post.html")
+
+def printget(request):
+  return render(request, "info/print-get.html")
+
+def printpost(request):
+  return render(request, "info/print-post.html")
