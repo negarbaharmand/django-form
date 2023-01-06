@@ -8,9 +8,7 @@
   </head>
   <body>
     <form action="{% url 'info:printget' %}" method="get"></form>
-    {% csrf_token %}
-    <label for="email">Enter your email:</label>
-    <input type="text" name="email" id="email" />
+    {% csrf_token %} {{form}}
     <input type="submit" />
   </body>
 </html>
